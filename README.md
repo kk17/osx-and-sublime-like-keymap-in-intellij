@@ -1,6 +1,6 @@
-# OSX and Sublime Text like keymap for IntelliJ
+# OSX and VS Code Text like keymap for IntelliJ
 
-A keymap, based on the 'default' Mac OS X 10.5 keymap from IntelliJ, which overrides things back to 'normal' OS X keymaps, like top of file with `cmd + up`, delete everything to the beginning of the line with `cmd + backspace` etc. It also set's the keybindings to be comparible with Sublime Text, with some small exceptions.
+A keymap, based on the 'default' Mac OS X 10.5 keymap from IntelliJ, which overrides things back to 'normal' OS X keymaps, like top of file with `cmd + up`, delete everything to the beginning of the line with `cmd + backspace` etc. It also set's the keybindings to be comparible with VS Code Text, with some small exceptions.
 
 ## Installation instructions
 
@@ -8,15 +8,15 @@ A keymap, based on the 'default' Mac OS X 10.5 keymap from IntelliJ, which overr
 
 2. Clone this repository
    ```
-   git clone git@github.com:peterklijn/osx-and-sublime-like-keymap-in-intellij.git
+   git clone git@github.com:peterklijn/osx-and-vscode-like-keymap-in-intellij.git
    ```
 
 3. Symlink the XML file you just cloned to this directory (create the `keymaps` folder if it doesn't exist)
    ```
-   ln -s ~/path/to/git/repo/osx-and-sublime-like-keymap.xml ~/Library/Preferences/IdeaIC2016.2/keymaps/. # Or whatever version of IntelliJ you use
+   ln -s ~/path/to/git/repo/osx-and-vscode-like-keymap.xml ~/Library/Preferences/IdeaIC2016.2/keymaps/. # Or whatever version of IntelliJ you use
    ```
 
-4. Start IntelliJ, go to the preferences (`cmd + ,`), go to Keymap, select 'OSX and Sublime Text' in the list of available keymaps.
+4. Start IntelliJ, go to the preferences (`cmd + ,`), go to Keymap, select 'OSX and VS Code Text' in the list of available keymaps.
 
 Tested in IntelliJ IDEA Community 2016.2.1
 
@@ -47,7 +47,7 @@ Tested in IntelliJ IDEA Community 2016.2.1
 - `cmd + down` Caret to bottom of file
 - `cmd + backspace` Delete to line start
 
-## Sublime defaults added
+## VS Code defaults added
 
 - `cmd + alt + left` Select Previous Tab
 - `cmd + alt + right` Select Next Tab
@@ -55,19 +55,22 @@ Tested in IntelliJ IDEA Community 2016.2.1
 - `cmd + K` Find next /Move to next occurrence
 - `ctrl + cmd + G` Select all occurrences
 - `cmd + shift + L` Split selection into lines [^issue-split-selection-into-lines]
-- `cmd + shift + D` Duplicate line or selection
+- `cmd + ctrl + down` Duplicate line or selection
 - `ctrl + shift + K` Delete line
 - `cmd + alt + F` Replace
 - `cmd + shift + R` Navigate to Symbol
 - `cmd + P` Navigate to file
-- `ctrl + cmd + up` Move line up
-- `ctrl + cmd + down` Move line down
+- `alt + up` Move line up
+- `alt + down` Move line down
 - `cmd + button1` Add or Remove Caret
 - `ctrl + cmd + P` Manage projects
+- `alt UP` Editor Select Word
+- `alt DOWN` Editor Unselect Word
 
 ## Custom stuff
 
-- `cmd + alt + up` Navigate back
+- `shift + -` Navigate back
+- `shift + ctrl + -` Navigate forward
 - `cmd + alt + down` Jump to source
 - `cmd + alt + E` Extract field (refactor)
 - `cmd + B` Run
