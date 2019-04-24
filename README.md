@@ -13,7 +13,8 @@ A keymap, based on the 'default' Mac OS X 10.5 keymap from IntelliJ, which overr
 
 3. Symlink the XML file you just cloned to this directory (create the `keymaps` folder if it doesn't exist)
    ```
-   ln -s ~/path/to/git/repo/osx-and-vscode-like-keymap.xml ~/Library/Preferences/IdeaIC2016.2/keymaps/. # Or whatever version of IntelliJ you use
+   mkdir -p ~/Library/Preferences/IdeaIC2019.1/keymaps/
+   ln -s ~/path/to/git/repo/osx-and-vscode-like-keymap.xml ~/Library/Preferences/IdeaIC2019.1/keymaps/. # Or whatever version of IntelliJ you use
    ```
 
 4. Start IntelliJ, go to the preferences (`cmd + ,`), go to Keymap, select 'OSX and VS Code Text' in the list of available keymaps.
